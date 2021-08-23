@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+/*
+
+   School Transportation Management Systems
+   Style Sheet
+   Author: Dean Everhart
+   Date:   8/22/21
+
+   Filename: stms_layout.css
+
+*/
+
+body { 
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1020px;
+   min-width: 640px;
+}
+
+/* ____________ Navigation Bar ______________ */
+
+body > header nav {
+   display: block;
+   text-align: left;
+   width: 100%;
+   height: 28px;
+}
+
+body > header > nav ul li {
+   display: inline;
+   padding-right: 25px;
+}
+
+body > header > nav ul li a {
+   color: black;
+   text-decoration: bold;
+   letter-spacing: 0.25em;
+}
+
+body > header > nav ul li a:visited {
+
+}
+
+body > header > nav ul li a:hover {
+   color: lightgray;
+}
+
+body > header > nav ul li a:active {
+
+}
+
+/* ____________ Navigation Bar end ____________ */
+
+
+body > article#txt_intro {
+   width: 51%;
+   float: left;
+   margin: 0 3% 0 3%;
+}
+
+body > aside {
+   color: black;
+   width: 20%;
+   float: left;
+   margin: 0 1.5% 0 0;
+}
+
+body > footer {
+   text-align: center; 
+   width: 100%;
+   clear: left;
+}
+
+/* __________ home - end ____________ */
+
+/* __________ about us (bootstrap) _________________*/
+
+div.container {
+   max-width: 1000px;
+}
+
+div.main {
+   background-image: url("../images/intro.jpg"); height: 560px; 
+   background-size: cover;
+   padding-top: 5%;
+}
+
+div.main h1 {
+   font-family:  'Special Elite', cursive;
+   font-size: 3.5em;
+   text-shadow: crimson 4px 2px 2px;
+}
+
+div.main h2 {
+   font-family: 'Rubik', sans-serif;
+   margin-bottom: 3%;
+}
+
+div.main a.btn {
+   background-color: crimson;
+   font-size: 1.5em;
+   color: white;
+   border-radius: 30px;
+}
+
+div.section {
+   padding-top: 3%;
+}
+
+div.row h1 {
+   font-family: 'Slabo 27px', cursive;
+}
+
+div.row p {
+   font-family: 'Special Elite', cursive;
+   font-size: 1.8em;
+}
+
+/* ______ about us (bootstrap) - end ___________ */
+
+/* __________ contact us (form) ________________ */
+
+form#survey {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap; 
+}
+
+form#survey > fieldset {
+      background-color: rgb(252, 219, 90);
+      border-radius: 20px;
+      -webkit-flex:1 1 300px;
+      flex: 1 1 300px;
+      font-size: 0.85em;
+      padding 10px
+      margin:  10px;
+}
+
+   div.formRow {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      margin: 7px 0px;
+   }
+
+   div.formRow > * {
+      -webkit-flex: 1 1 1.5ppx ;
+      flex:  1 1 150px;
+
+   }
+
+/* Legend Styles */
+   legend {
+      color: black;
+      padding:  5px;
+}
+
+/* Text Area Styles */
+textarea {
+   margin-top: 10px;
+   height: 100px;
+   resize: none;
+   width: 95%;
+}
+
+/* Form Button Styles */
+div#buttons {
+   text-align: center;
+   width: 100%;
+}
+
+input[type="submit"], input[type="reset"] {
+   font-size: 1.2em;
+   padding: 5px;
+   margin: 15px;
+   }
+
+/* Validation Styles */
+input:focus, select:focus, textarea:focus {
+}
+
+input#name:focus:valid, input#zip:focus:valid, input#phone:focus:valid, input#mail:focus:valid, input#zip:focus:valid {
+   
+input#name:focus:invalid, input#zip:focus:invalid, input#phone:focus:invalid, input#mail:focus:invalid, input#zip:focus:invalid {
+}
+   background: rgb(252, 219, 90) url("rb_invalid.png") bottom right/contain no-repeat;*/
+   background-color:  rgb(252, 219, 90);
+   background-image: url("rb_valid.png");
+   background-positon:  bottom right;
+   background-size: contain;
+   background-repeat: no-repeat;
+
+/*   background: rgb(220, 255, 220) url("rb_valid.png") bottom right/contain no-repeat;*/
+   background-color:  rgb(252, 219, 90);
+   background-image: url("rb_valid.png");
+   background-positon:  bottom right;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+/* _______ contact us (form) - end __________ */
+
+/* ____________ screen size _________________ */
+
+@media only screen and (min-width: 601px) {
+
+body {
+   min-height: 100%;
+}
+
+body > header nav ul {
+   position:absolute;
+   top: 0;
+   right: 0;
+}
+
+article {
+   margin-left: 250px;
+}
+
+article p {
+   font-size: 1.1em;
+}
+
+
+article header img {
+   position: inherit;
+   width: 100%;
+   display: block;
+}
+
+
+aside {
+   display: block;
+   float: right;
+   width: 250px;
+
+   margin-top: -30px;
+}
+
+aside blockquote {
+   width: 80%;
+   color: black;
+   margin: 10px auto 20px;
+   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+   font-size: 0.9em;
+}
+
+article address {
+   font-size: 1.1em;
+}
+
+body > h1 {
+   margin-left: 20px;
+   font-size: 2.5em;
+}
+
+body > h2 {
+   margin-left: 30px;
+   font-size: 1.5em;
+}
+
+body > p {
+   margin-left: 30px;
+   font-size: 1em;
+}
+
+body > img {
+   width: 50%;
+   float: right;
+   margin: 0px 10px 10px 10px;
+}
+
+footer {
+   width: 100%;
+   font-size: 1em;
+}
+
+/* =============================================
+   Desktop layout styles used by  devices
+   769px and larger.
+   =============================================
+*/
+
+@media only screen and (min-width: 769px) {
+
+html {
+   background-color: rgb(252, 219, 90);
+}
+
+body {
+   width: 90%;
+   max-width: 1020px;
+   -moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+   -webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+   box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+}
+
+/* _____________ screen size - end ________________ */

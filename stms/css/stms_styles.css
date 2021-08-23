@@ -1,0 +1,20 @@
+/*  
+
+   School Transportation Mangement Systems
+   Author: Dean Everhart
+   Date:   8/22/21
+
+   Filename: fvm_styles.css
+
+*/
+
+
+html {
+   background-color: rgb(252, 219, 90);
+}
+
+body {
+	  background-color: rgb(252, 219, 90);
+	  font-family: "Arial", "Geneva", sans-serif; 
+}
+
